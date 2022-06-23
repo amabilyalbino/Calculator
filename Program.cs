@@ -1,4 +1,37 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+Operacao(metodo:"soma");
+
+static void Operacao(string metodo) {
+
+    Console.Clear();
+
+    Console.WriteLine("Primeiro valor: ");
+    float v1 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Segundo valor: ");
+    float v2 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("");
+
+    if (metodo == "subtracao")
+    {
+        float resultado = v1-v2;
+        Console.WriteLine($"O resultado da subtracao é {resultado}");
+    }
+    if (metodo == "soma"){
+
+        float resultado = v1+v2;
+        Console.WriteLine($"O resultado da soma é {resultado}");
+    }
+    if (metodo == "multiplicacao") {
+
+         float resultado = v1*v2;
+        Console.WriteLine($"O resultado da multipicacao  é {resultado}");
+    }
+
+
+
+// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Primeiro valor: ");
 // float v1 = float.Parse(Console.ReadLine());
 
@@ -63,35 +96,6 @@
 //     Console.ReadKey();
 
 // } 
-Operacao(metodo:"soma");
-
-static void Operacao(string metodo) {
-
-    Console.Clear();
-
-    Console.WriteLine("Primeiro valor: ");
-    float v1 = float.Parse(Console.ReadLine());
-
-    Console.WriteLine("Segundo valor: ");
-    float v2 = float.Parse(Console.ReadLine());
-
-    Console.WriteLine("");
-
-    if (metodo == "subtracao")
-    {
-        float resultado = v1-v2;
-        Console.WriteLine($"O resultado da subtracao é {resultado}");
-    }
-    if (metodo == "soma"){
-
-        float resultado = v1+v2;
-        Console.WriteLine($"O resultado da soma é {resultado}");
-    }
-    if (metodo == "multiplicacao") {
-
-         float resultado = v1*v2;
-        Console.WriteLine($"O resultado da multipicacao  é {resultado}");
-    }
 
       
 
